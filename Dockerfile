@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y \
       zlib1g-dev \
       bison \
       libgdbm-dev \
-      ruby \
+      curl \
       && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/src/ruby \
