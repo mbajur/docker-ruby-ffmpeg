@@ -42,7 +42,7 @@ RUN mkdir -p /usr/src/ruby \
       && ./configure --disable-install-doc \
       && make -j"$(nproc)" \
       && make install \
-      && apt-get purge -y --auto-remove bison libgdbm-dev ruby \
+      && apt-get purge -y --auto-remove bison libgdbm-dev \
       && rm -r /usr/src/ruby
 
 # skip installing gem documentation
