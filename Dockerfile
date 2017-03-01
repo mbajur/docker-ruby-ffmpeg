@@ -52,4 +52,4 @@ ENV BUNDLER_VERSION 1.10.3
 
 RUN gem install bundler --version "$BUNDLER_VERSION"
 
-CMD [ "irb" ]
+ENTRYPOINT []
